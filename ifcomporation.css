@@ -1,0 +1,123 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+    justify-content: space-evenly;
+}
+
+#produto1{
+    margin: 30px;
+    background-color: white;
+    border: 3px solid #ebc0ff;
+    display: inline-block;
+    overflow: hidden;
+    height: 350px;
+    width: 300px;
+    position: relative; 
+}
+
+#produto2{
+    margin: 30px;
+    background-color: white;
+    border: 3px solid #ebc0ff;
+    display: inline-block;
+    overflow: hidden;
+    height: 350px;
+    width: 300px;
+    position: relative; 
+}
+
+#produto3{
+    margin: 30px;
+    background-color: white;
+    border: 3px solid #ebc0ff;
+    display: inline-block;
+    overflow: hidden;
+    height: 350px;
+    width: 300px;
+    position: relative; 
+}
+
+.produto h2{
+    padding: 25px;
+    margin: 0;
+}
+
+.produto p{
+    position: absolute;
+    padding: 20px;
+    margin: 0;
+    font-size: 20px;
+    top: 25%;
+}
+
+.preco{
+    position: absolute;
+    top: 65%;
+    padding: 20px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.cadastro{
+    position: absolute;
+    padding: 20px;
+    margin: 0;
+    font-size: 20px;
+    top: 80%;
+}
+
+.containerImagem{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+    justify-content: space-evenly;
+}
+
+#produtoDestaque{
+    margin: 30px;
+    background-color: white;
+    border: 3px solid #ebc0ff;
+    display: inline-block;
+    overflow: hidden;
+    width: 500px;
+    height: 650px;
+    position: relative; 
+}
+
+.imgDestaque{
+    width: 500px;
+    height: 400px;
+}
+
+.pDestaque h2{
+    position: absolute;
+    padding: 20px;
+    margin: 0;
+    font-size: 20px;
+    top: 65%;
+}
+  
+  .pDestaque p{
+    position: absolute;
+    padding: 20px;
+    margin: 0;
+    font-size: 20px;
+    top: 75%;
+}
+
+.precoDestaque{
+    position: absolute;
+    top: 85%;
+    padding: 20px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.cadastroDestaque{
+    position: absolute;
+    padding: 20px;
+    margin: 0;
+    font-size: 20px;
+    top: 90%;
+}
