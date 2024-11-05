@@ -1,123 +1,106 @@
-.container{
+/* Container Principal */
+.container, .containerImagem {
     display: flex;
     flex-wrap: wrap;
-    margin: 100px;
-    justify-content: space-evenly;
-}
-
-#produto1{
-    margin: 30px;
-    background-color: white;
-    border: 3px solid #ebc0ff;
-    display: inline-block;
-    overflow: hidden;
-    height: 350px;
-    width: 300px;
-    position: relative; 
-}
-
-#produto2{
-    margin: 30px;
-    background-color: white;
-    border: 3px solid #ebc0ff;
-    display: inline-block;
-    overflow: hidden;
-    height: 350px;
-    width: 300px;
-    position: relative; 
-}
-
-#produto3{
-    margin: 30px;
-    background-color: white;
-    border: 3px solid #ebc0ff;
-    display: inline-block;
-    overflow: hidden;
-    height: 350px;
-    width: 300px;
-    position: relative; 
-}
-
-.produto h2{
-    padding: 25px;
-    margin: 0;
-}
-
-.produto p{
-    position: absolute;
+    gap: 30px;
+    margin: 50px auto;
+    justify-content: center;
+    max-width: 1200px;
     padding: 20px;
-    margin: 0;
-    font-size: 20px;
-    top: 25%;
 }
 
-.preco{
-    position: absolute;
-    top: 65%;
-    padding: 20px;
-    margin: 0;
-    font-size: 20px;
+/* Produto Geral */
+.produto, .pDestaque {
+    background-color: #ffffff;
+    border: 3px solid #ebc0ff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.cadastro{
-    position: absolute;
-    padding: 20px;
-    margin: 0;
-    font-size: 20px;
-    top: 80%;
+.produto:hover, .pDestaque:hover {
+    transform: scale(1.05);
 }
 
-.containerImagem{
+/* Produto Regular */
+#produto1, #produto2, #produto3 {
+    width: 280px;
+    height: 350px;
+    padding: 15px;
     display: flex;
-    flex-wrap: wrap;
-    margin: 100px;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#produtoDestaque{
-    margin: 30px;
-    background-color: white;
-    border: 3px solid #ebc0ff;
-    display: inline-block;
-    overflow: hidden;
-    width: 500px;
-    height: 650px;
-    position: relative; 
-}
-
-.imgDestaque{
-    width: 500px;
-    height: 400px;
-}
-
-.pDestaque h2{
-    position: absolute;
-    padding: 20px;
+/* Título do Produto */
+.produto h2, .pDestaque h2 {
+    font-size: 1.2rem;
+    color: #333;
     margin: 0;
-    font-size: 20px;
-    top: 65%;
-}
-  
-  .pDestaque p{
-    position: absolute;
-    padding: 20px;
-    margin: 0;
-    font-size: 20px;
-    top: 75%;
+    padding: 10px;
 }
 
-.precoDestaque{
-    position: absolute;
-    top: 85%;
-    padding: 20px;
-    margin: 0;
-    font-size: 20px;
+/* Descrição do Produto */
+.produto p, .pDestaque p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 10px 0;
+    padding: 0 15px;
 }
 
-.cadastroDestaque{
-    position: absolute;
+/* Preço */
+.preco, .precoDestaque {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Data de Cadastro */
+.cadastro, .cadastroDestaque {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* Produto em Destaque */
+#produtoDestaque {
+    width: 450px;
+    height: 600px;
     padding: 20px;
-    margin: 0;
-    font-size: 20px;
-    top: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.imgDestaque {
+    width: 75%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid #ebc0ff;
+}
+
+/* Layout Responsivo */
+@media (max-width: 768px) {
+    .container, .containerImagem {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    #produtoDestaque {
+        width: 90%;
+        height: auto;
+    }
+
+    #produto1, #produto2, #produto3 {
+        width: 90%;
+        height: auto;
+    }
+
+    .imgDestaque {
+        height: 250px;
+    }
 }
