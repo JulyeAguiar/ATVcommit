@@ -87,7 +87,17 @@ const id3 = document.getElementById("produto3");
 id3.insertAdjacentHTML('afterbegin',produto3.mostrarProduto())
 console.log(produto3)
 
-const imgDestaque = new destaque("Luminária de Vaquinha", "20/12/2022", "Caro Ebbo, você ilumina nosso dia (e noite) com sua personalidade brilhante.", 20, "https://cdn.shopify.com/s/files/1/0527/2659/5743/products/ShopzokiCowLightOff_1800x1800.jpg?v=1669311428");
+const imgDestaque = new destaque("Luminária de Vaquinha", "20/12/2022", "Caro Ebbo, você ilumina nosso dia (e noite) com sua personalidade brilhante.", 20, "./img/Chuck 70 Plus Preto.jpg");
 const id4 = document.getElementById("produtoDestaque");
 id4.insertAdjacentHTML('afterbegin',imgDestaque.mostrarDestaque())
+console.log(imgDestaque)
+
+const imgDestaque1 = new destaque("Luminária de Vaquinha", "20/12/2022", "Caro Ebbo, você ilumina nosso dia (e noite) com sua personalidade brilhante.", 20, "./img/Chuck 70 Plus Pride Branco.jpg");
+const id5 = document.getElementById("produtoDestaque2");
+id4.insertAdjacentHTML('afterbegin',imgDestaque1.mostrarDestaque())
+console.log(imgDestaque)
+
+const imgDestaque2 = new destaque("Luminária de Vaquinha", "20/12/2022", "Caro Ebbo, você ilumina nosso dia (e noite) com sua personalidade brilhante.", 20, "./img/Chuck 70 Prism Glitter Amarelo.jpg");
+const id6 = document.getElementById("produtoDestaque3");
+id4.insertAdjacentHTML('afterbegin',imgDestaque2.mostrarDestaque())
 console.log(imgDestaque)
