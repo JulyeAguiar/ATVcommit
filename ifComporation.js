@@ -72,7 +72,7 @@ class destaque extends Produto {
 }
 
 
-const produto1 = new Produto("Tapete de Vaquinha", "", "Nosso tapete de vaquinha é o destaque perfeito para qualquer cômodo que ofereça mais do que apenas um aperto sob os pés", 38);
+const produto1 = new Produto("Tapete de Vaquinha", "83/23/2333", "Nosso tapete de vaquinha é o destaque perfeito para qualquer cômodo que ofereça mais do que apenas um aperto sob os pés", 38);
 const id1 = document.getElementById("produto1");
 id1.insertAdjacentHTML('afterbegin',produto1.mostrarProduto())
 console.log(produto1)
